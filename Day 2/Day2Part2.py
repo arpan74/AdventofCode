@@ -1,8 +1,8 @@
 def DetermineRib(l, w, h):
 	surfA = l*w*h
-	if( min((l*w),(w*h),(l*h) == l*w ):
+	if min((l*w),(w*h),(l*h)) == l*w:
 		return (l + l + w + w) + surfA 
-	if( min((l*w),(w*h),(l*h) == w*h ):
+	if min((l*w),(w*h),(l*h)) == w*h :
 		return (w + w + h + h) + surfA
 	return (l + l + h + h ) + surfA
 sum = 0
